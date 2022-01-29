@@ -1,0 +1,45 @@
+import LiveTesting as lT
+value1 = lT.text
+value2 = lT.result
+<Root>:
+
+    orientation: 'vertical'
+
+    RecordButton:
+        id: record_button
+        text: 'Record Speech'
+        on_release: self.record()
+        height: '50dp'
+        size_hint_y: None
+
+    TextInput:
+     id: speech
+     text: record_button.output
+     readonly: True
+     size_hint: (1, .5)
+
+Button:
+
+        text:"Speak Now"
+        pos_hint: {"x":0.2, "y":.4}
+        size_hint: 0.3, 0.2
+
+Button:
+        text:"Speech Text"
+        self.output = ("You said: {}".format(value1))
+        # The default color of a button
+Button:
+        text:"Emotion"
+        self.output = self.output2 = ("The identified emotion is: {}".format(value2))
+
+Button:
+       if value2 == 'happy':
+     self.output3 = "C:\Users\user\Downloads\smile.png"
+ elif value2 == 'sad':
+     self.output3 = "C:\Users\user\Downloads\sad emoji.png"
+ elif value2 == 'angry':
+     self.output3 = "C:\Users\user\Downloads\angry emoji.png"
+ elif value2 == 'neutral':
+     self.output3 = "C:\Users\user\Downloads\neutral emoji.png
+
+
