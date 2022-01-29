@@ -1,0 +1,2 @@
+# Speech-Emotion-Recognition-using-machine-learning
+Speech Emotion Recognition will help us to recognize the emotional state of a person in 4 categories which are anger, neutral , happiness and sadness. This project uses  modulation spectral features and mel-frequency cepstrum coefficients (MFCC),,to extract the emotional features of a speech. The speech emotion recognition is based on the Artificial Neural Network (ANN) algorithm which uses different modules for the emotion recognition and the MLP classifier is used to differentiate emotions.
